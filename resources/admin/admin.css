@@ -1,0 +1,17 @@
+.thumbnail {
+	position: relative;
+	z-index: 98999;
+}
+.thumbnail .img-layout {
+	position: absolute;
+    left: 0;
+    width: 181px;
+    height: auto;
+    z-index: 9999;
+    border: 2px solid #666;
+    top: 10px;
+    display: none;
+}
+.thumbnail:hover .img-layout {
+	display: block;
+}

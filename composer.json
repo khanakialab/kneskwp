@@ -1,0 +1,25 @@
+{
+    "name": "kneskwp/fm",
+    "description": "Knesk WP Framework",
+    "type": "library",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Aman",
+            "email": "aman@knesk.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^1.0",
+        "timber/timber": "^1.9",
+        "tgmpa/tgm-plugin-activation": "^2.6"
+    },
+
+    "autoload": {
+        "psr-4": {
+          "Knesk\\Framework\\": "fm/src",
+          "Knesk\\App\\": "app/src",
+          "Knesk\\App\\Comp\\": "app/components"
+        }
+    }
+}

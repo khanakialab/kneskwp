@@ -1,0 +1,20 @@
+<div class="navct {{css_class}}">
+    <div class="grid-container ">
+        <div class="logo grid-item">
+            <a href="{{site.url}}"><img src="{{logo.url|base64_image_url}}" alt="{{logo.alt}}" /></a>
+        </div>
+        <nav class="nav grid-item">
+            {{navHtml | raw}}
+        </nav>
+        
+        <button class="navbar-toggler ml-auto" type="button" onclick="sideNav.open()"><i class="fas fa-bars fa-1x"></i></button>
+    </div>
+</div>
+
+
+<div id="mySidenav" class="sidenav">
+	<a href="javascript:void(0)" class="closebtn" onclick="sideNav.close()">&times;</a>
+	<div class="nav">
+	  	{{navHtml | raw}}
+	</div>
+</div>

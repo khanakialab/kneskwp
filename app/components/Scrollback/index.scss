@@ -1,0 +1,75 @@
+
+.scroll_back_btns {
+	display: none;
+	position: fixed;
+	bottom: 85px;
+	right: 40px;
+	height: 40px;
+	text-align: center;
+	text-decoration: none;
+	z-index: 1000;
+	overflow: hidden;
+	border-radius: 50%;
+
+	.btn-scroll-bgwhite {
+		display: none;
+		outline: 0;
+		margin-right: 10px;
+	}
+
+	.back-to-top {
+		box-sizing: border-box;
+		font-size: 10px;
+		/*color: #4c78a7;*/
+		outline: 0;
+		padding: 15px 12px;
+	    width: 40px;
+	    height: 40px;
+	    display: block;
+	    margin: 0 auto;
+	    color: #fff;
+	    /*background-color: #4c78a7;*/
+	    font-size: 10px;
+	    border-radius: 50%;
+	    background: #999999 url("./images/back-to-top-arrow.svg") no-repeat center center / 15px 15px;
+
+		i {
+		}
+
+		&:after {
+		    top: 100%;
+		    right: 0;
+		    bottom: 0;
+		    left: 0;
+		    position: absolute;
+		    background-color: rgba(255,255,255,.3);
+		    -webkit-transition: top .24s ease;
+		    -o-transition: top .24s ease;
+		    transition: top .24s ease;
+		    content: '';
+		}
+
+		&:hover {
+			&:after {
+				top: 0;
+			}
+		}
+	}
+
+	@media screen and (max-width: 767px) {
+		bottom: 5%;
+		height: 30px;
+		right: 10px;
+
+		.back-to-top {
+			width: 30px;
+			height: 30px;
+		}
+	}
+
+}
+
+.no-touch .scroll_back_btns .back-to-page:hover {
+	background: #87bd1f;
+	color: #fff;
+}
